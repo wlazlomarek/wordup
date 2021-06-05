@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-blue: #0092ed;
+  --c-dark-blue: #005fbf;
+  --c-grey: #c1c1c1;
+  --ff: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: transparent linear-gradient(90deg, #0092ed 0%, #005fbf 100%) 0% 0% no-repeat;
+  padding: 1.25rem 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: var(--ff);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--c-white);
+  text-align: center;
+  margin: 0;
+}
+
+hr {
+  display: inline-block;
+  color: var(--c-grey);
+  background-color: var(--c-grey);
+  width: 85%;
+  height: 1px;
+  border: none;
+}
+
+.upper {
+  font-size: 0.3em;
+  text-transform: uppercase;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.56em 0 1.56em;
+}
+
+.container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1.25em 0 1.25em 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em 0 2em;
+  height: 10ch;
+}
+
+.text {
+  font-family: var(--ff);
+  font-size: 0.93rem;
+  font-weight: 500;
+  font-style: italic;
+  max-width: 140px;
+}
+
+.eng__1,
+.eng__2,
+.eng__3,
+.eng__4,
+.eng__5 {
+  text-align: right;
+  display: none;
+}
+
+.btn {
+  border: none;
+  font-size: 1em;
+  padding: 1em 3em;
+  color: var(--c-white);
+  background: linear-gradient(90deg, rgba(0, 146, 237, 1) 0%, rgba(0, 95, 191, 1) 100%);
+  border-radius: 2em;
+  cursor: pointer;
+  /* justify-items: center; */
+}
+.btn-icon {
+  background: none;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.fa-cloud-download-alt,
+.fa-redo-alt {
+  color: white;
+  /* padding: 0.5em; */
+}
+
+/* override styles start*/
+.swal2-container {
+  font-family: var(--ff);
+}
+
+.swal2-styled.swal2-confirm {
+  border: none !important;
+  font-size: 1em !important;
+  padding: 1em 3em i !important;
+  color: var(--c-white) !important;
+  background: linear-gradient(90deg, rgba(0, 146, 237, 1) 0%, rgba(0, 95, 191, 1) 100%) !important;
+  border-radius: 2em !important;
+  cursor: pointer im !important;
+  text-transform: lowercase !important;
+}
+
+.swal2-styled:focus {
+  box-shadow: none !important;
+}
+/* override styles end */
+
+.fa-lg {
+  line-height: inherit !important;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 450px;
+    margin: 1em auto 1em;
+  }
+
+  .header-area {
+    max-width: 400px;
+    margin: auto;
+  }
+}

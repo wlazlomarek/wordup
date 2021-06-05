@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.pytest_cache
+__pycache__/
+.env
+
+venv/
+google_secret_key/google_credential.json
+screens/screen_01.PNG
+screens/screen_02.PNG
+.DS_Store
